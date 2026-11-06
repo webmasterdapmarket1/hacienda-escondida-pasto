@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import { UtensilsCrossed, Clock, Calendar, Users, Phone, MapPin, Sparkles, Send, CheckCircle2 } from "lucide-react"
+import { UtensilsCrossed, Clock, Calendar, Users, Phone, MapPin, Sparkles, Send, CheckCircle2, Navigation } from "lucide-react"
 import { MENUS_DATA, MenuSection, MenuItem } from "../data/menus"
 import { SITE } from "../data/site"
 import { buildRestaurantWhatsAppUrl } from "../lib/whatsapp"
+import { LocationMap } from "../components/sections/LocationMap"
 
 export const Restaurante: React.FC = () => {
   const [name, setName] = useState("")
@@ -83,7 +84,25 @@ export const Restaurante: React.FC = () => {
               <div>
                 <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold block">Ubicación</span>
                 <span className="font-serif text-lg font-bold text-[#1E3A2B]">Vereda Dolores, Mocondino</span>
-                <span className="text-xs text-[#5E6763] block">7-9 min del Único Outlet</span>
+                <div className="flex items-center gap-2 mt-0.5">
+                  <a
+                    href={SITE.maps.directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-[#E36E5E] hover:underline font-medium"
+                  >
+                    Google Maps ↗
+                  </a>
+                  <span className="text-gray-300">•</span>
+                  <a
+                    href={SITE.maps.wazeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-emerald-700 hover:underline font-medium"
+                  >
+                    Waze ↗
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -299,6 +318,9 @@ export const Restaurante: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Mapa y Cómo Llegar */}
+      <LocationMap />
     </div>
   )
 }

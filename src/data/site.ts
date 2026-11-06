@@ -12,7 +12,7 @@ export const SITE = {
   address: "Dolores Viejo 35 Div 1, Vereda Dolores, Corregimiento de Mocondino, Pasto, Nariño",
   distanceReference: "A solo 7 a 9 minutos del Centro Comercial Único Outlet",
   googleRating: 4.2,
-  googleReviewCount: 73,
+  googleReviewCount: 80,
   hours: {
     restaurant: "Domingos y festivos de 12:00 m. a 3:00 p.m.",
     events: "Lunes a sábado con cita previa (eventos privados hasta las 2:00 a.m.)",
@@ -24,8 +24,8 @@ export const SITE = {
     tiktokHandle: "@hacienda.escondida.pasto",
   },
   maps: {
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.859664619478!2d-77.2608465!3d1.2185202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed53e2a09b3eb%3A0xd644b9a06ee06209!2sHacienda%20Escondida!5e0!3m2!1ses!2sco!4v1714000000000!5m2!1ses!2sco",
-    directionsUrl: "https://maps.google.com/?q=Hacienda+Escondida+Pasto+Mocondino",
-    wazeUrl: "https://waze.com/ul?q=Hacienda%20Escondida%20Pasto",
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.948281313333!2d-77.2432808!3d1.1919699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed57b8c066ab7%3A0x17a37013239a5fec!2sHacienda%20Escondida%20Pasto!5e0!3m2!1ses!2sco!4v1714000000000!5m2!1ses!2sco",
+    directionsUrl: "https://maps.app.goo.gl/dn9UHFkwccMZEHP37",
+    wazeUrl: "https://ul.waze.com/ul?place=ChIJt2oGjHvVLo4R7F-aIxNwoxc&ll=1.19196990%2C-77.24070050&navigate=yes&utm_campaign=live_map&utm_source=waze_website&utm_medium=lm_share_location",
   },
 }

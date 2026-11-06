@@ -9,10 +9,15 @@ export const Testimonials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 text-xs text-[#BCD9C7] font-medium mb-4">
+          <a
+            href={SITE.maps.directionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 text-xs text-[#BCD9C7] hover:text-white font-medium mb-4 transition-colors"
+          >
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-            <span>{SITE.googleRating} de 5.0 en Google Business Profile ({SITE.googleReviewCount} reseñas)</span>
-          </div>
+            <span>{SITE.googleRating} de 5.0 en Google Business Profile ({SITE.googleReviewCount} reseñas) ↗</span>
+          </a>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
             Lo que Dicen Quienes Ya Celebraron con Nosotros

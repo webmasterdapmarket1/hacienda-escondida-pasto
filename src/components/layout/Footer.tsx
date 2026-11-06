@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { MapPin, Phone, Mail, Clock, ShieldCheck, Heart } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, ShieldCheck, Heart, Navigation } from "lucide-react"
 import { SITE } from "../../data/site"
 
 export const Footer: React.FC = () => {
@@ -147,15 +147,24 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row gap-2">
               <a
                 href={SITE.maps.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs bg-white/10 hover:bg-white/20 text-white px-3.5 py-2 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-2 rounded-lg transition-colors flex-1"
               >
                 <MapPin className="w-3.5 h-3.5 text-[#BCD9C7]" />
-                <span>Cómo llegar desde el Único Outlet</span>
+                <span>Google Maps</span>
+              </a>
+              <a
+                href={SITE.maps.wazeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 text-xs bg-[#BCD9C7]/20 hover:bg-[#BCD9C7]/30 text-[#BCD9C7] hover:text-white px-3 py-2 rounded-lg transition-colors flex-1"
+              >
+                <Navigation className="w-3.5 h-3.5 text-[#E36E5E]" />
+                <span>Waze</span>
               </a>
             </div>
           </div>

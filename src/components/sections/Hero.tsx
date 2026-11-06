@@ -85,14 +85,19 @@ export const Hero: React.FC = () => {
             <p className="text-xs text-white/70 mt-1 font-light">12:00 m. a 3:00 p.m. Cocina nariñense</p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-white transition-transform hover:-translate-y-1">
+          <a
+            href={SITE.maps.directionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-white transition-all hover:-translate-y-1 block group"
+          >
             <div className="flex items-center gap-2 text-[#BCD9C7] text-xs font-medium uppercase tracking-wider mb-1">
               <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-              <span>Prueba Social</span>
+              <span className="group-hover:text-white transition-colors">Prueba Social</span>
             </div>
-            <div className="font-serif text-xl sm:text-2xl font-bold">4.2 / 5.0 ★</div>
-            <p className="text-xs text-white/70 mt-1 font-light">73 reseñas reales en Google Maps</p>
-          </div>
+            <div className="font-serif text-xl sm:text-2xl font-bold">{SITE.googleRating} / 5.0 ★</div>
+            <p className="text-xs text-white/70 mt-1 font-light">{SITE.googleReviewCount} reseñas en Google Maps ↗</p>
+          </a>
         </div>
       </div>
     </section>
