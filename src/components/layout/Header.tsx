@@ -21,12 +21,10 @@ export const Header: React.FC = () => {
   }, [location])
 
   const navLinks = [
-    { name: "Inicio", path: "/" },
     { name: "Salones y Espacios", path: "/nosotros-y-espacios" },
     { name: "Eventos Sociales", path: "/eventos-sociales" },
     { name: "Eventos Corporativos", path: "/eventos-corporativos" },
     { name: "Restaurante", path: "/restaurante" },
-    { name: "Cotizar", path: "/cotizar" },
   ]
 
   const isActive = (path: string) => {
