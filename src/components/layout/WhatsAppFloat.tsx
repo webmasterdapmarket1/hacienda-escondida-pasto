@@ -4,7 +4,7 @@ import { SITE } from "../../data/site"
 
 export const WhatsAppFloat: React.FC = () => {
   const defaultMessage = encodeURIComponent(
-    "Hola Melisa, visito la página web de Hacienda Escondida Pasto y me gustaría recibir información sobre eventos y reservas."
+    "Hola, me gustaria recibir informacion sobre eventos y reservas en Hacienda Escondida."
   )
 
   return (

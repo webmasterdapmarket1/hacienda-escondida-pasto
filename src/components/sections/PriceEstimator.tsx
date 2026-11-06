@@ -23,8 +23,15 @@ export const PriceEstimator: React.FC = () => {
   }
 
   const handleWhatsAppQuote = () => {
-    const message = `Hola Melisa, usé la calculadora estimativa de la web y coticé un evento de ${guests} personas con ${selectedMenuName} (${formatCOP(selectedMenuPrice)}/inv) para un total estimado de ${formatCOP(totalEstimated)}. Me gustaría validar disponibilidad de fecha.`
-    window.open(`https://wa.me/${SITE.phonePrimaryClean}?text=${encodeURIComponent(message)}`, "_blank")
+    const formattedTotal = `$${totalEstimated.toLocaleString("es-CO")}`
+    const parts = [
+      "Hola, realice una cotizacion en la calculadora web:",
+      `Invitados: ${guests}`,
+      `Menu: ${selectedMenuName}`,
+      `Total estimado: ${formattedTotal}`,
+      "Me gustaria validar disponibilidad de fecha.",
+    ]
+    window.open(`https://wa.me/${SITE.phonePrimaryClean}?text=${encodeURIComponent(parts.join("\n"))}`, "_blank")
   }
 
   return (
