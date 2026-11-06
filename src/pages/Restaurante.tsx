@@ -35,7 +35,7 @@ export const Restaurante: React.FC = () => {
       <section className="relative py-24 bg-[#1E3A2B] text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-35">
           <img
-            src="/images/zonas-verdes.jpg"
+            src="/images/restaurante-campestre.jpg"
             alt="Restaurante Campestre Hacienda Escondida"
             className="w-full h-full object-cover"
           />
@@ -103,10 +103,32 @@ export const Restaurante: React.FC = () => {
 
       {/* Carta del Restaurante */}
       <section className="py-20 bg-white border-b border-black/5">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Imagen Destacada del Restaurante */}
+          <div className="mb-16 rounded-3xl overflow-hidden border border-black/5 shadow-md bg-[#FAF9F5] grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div className="lg:col-span-7 h-64 sm:h-80 lg:h-96 overflow-hidden">
+              <img
+                src="/images/restaurante-campestre.jpg"
+                alt="Instalaciones del Restaurante Campestre Hacienda Escondida"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="lg:col-span-5 p-6 sm:p-8 lg:p-10 space-y-4">
+              <span className="text-xs font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-100/70 px-3 py-1 rounded-full inline-block">
+                Ambiente Campestre Cubierto y Jardines
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1E3A2B] leading-snug">
+                Un salón luminoso con vista a la pradera verde
+              </h2>
+              <p className="text-xs sm:text-sm text-[#5E6763] font-light leading-relaxed">
+                Nuestro restaurante combina la calidez de su arquitectura campestre acristalada con extensas zonas verdes donde los niños pueden jugar con total seguridad mientras disfrutas la sobremesa dominical.
+              </p>
+            </div>
+          </div>
+
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#E36E5E] bg-[#FDECE9] px-3.5 py-1.5 rounded-full">
-              Nuestra Carta
+              Nuestra Carta Dominical
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1E3A2B] mt-3">
               Especialidades Campestres de la Hacienda
@@ -116,31 +138,48 @@ export const Restaurante: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {campestreMenu?.items.map((item: MenuItem, idx: number) => (
               <div
                 key={idx}
-                className="bg-[#FAF9F5] p-5 sm:p-6 rounded-2xl border border-black/5 flex flex-col justify-between hover:shadow-sm transition-all"
+                className="bg-[#FAF9F5] rounded-2xl border border-black/5 overflow-hidden flex flex-col justify-between hover:shadow-md transition-all group"
               >
                 <div>
-                  <div className="flex justify-between items-start gap-4 mb-2">
-                    <h3 className="font-serif text-xl font-bold text-[#1E3A2B]">
-                      {item.name}
-                    </h3>
-                    {item.price && (
-                      <span className="font-serif text-lg font-bold text-[#E36E5E] shrink-0">
-                        {formatCOP(item.price)}
+                  {item.image && (
+                    <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      {item.tag && (
+                        <span className="absolute top-3 left-3 text-[10px] font-semibold uppercase tracking-wider text-white bg-[#1E3A2B]/85 backdrop-blur-xs px-2.5 py-1 rounded-md shadow-xs">
+                          {item.tag}
+                        </span>
+                      )}
+                    </div>
+                  )}
+                  <div className="p-5">
+                    <div className="flex justify-between items-start gap-3 mb-2">
+                      <h3 className="font-serif text-lg font-bold text-[#1E3A2B] leading-snug">
+                        {item.name}
+                      </h3>
+                      {item.price && (
+                        <span className="font-serif text-base font-bold text-[#E36E5E] shrink-0">
+                          {formatCOP(item.price)}
+                        </span>
+                      )}
+                    </div>
+                    {!item.image && item.tag && (
+                      <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-100/60 px-2.5 py-0.5 rounded-md mb-2">
+                        {item.tag}
                       </span>
                     )}
+                    <p className="text-xs text-[#5E6763] font-light leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                  {item.tag && (
-                    <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-100/60 px-2.5 py-0.5 rounded-md mb-2">
-                      {item.tag}
-                    </span>
-                  )}
-                  <p className="text-xs text-[#5E6763] font-light leading-relaxed">
-                    {item.description}
-                  </p>
                 </div>
               </div>
             ))}

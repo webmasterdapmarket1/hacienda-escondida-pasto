@@ -3,6 +3,7 @@ export interface MenuItem {
   description?: string
   price?: number
   tag?: string
+  image?: string
 }
 
 export interface MenuSection {
@@ -38,18 +39,18 @@ export const MENUS_DATA: MenuSection[] = [
     subtitle: "Nuestra carta estrella servida en el Restaurante Dominical y para celebraciones familiares",
     note: "Sabores auténticos de la región preparados con recetas campesinas tradicionales en un ambiente de hacienda.",
     items: [
-      { name: "Frito Pastuso Tradicional", description: "Pierna de cerdo crocante con crispetas, papa cocida, plátano maduro, queso campesino, ají de maní y limón.", price: 38000, tag: "Especialidad Nariñense" },
-      { name: "Trucha Frita Corte Mariposa (450g)", description: "Trucha fresca servida con arroz, ensalada de mango de la región y patacones crocantes.", price: 39000, tag: "Pescado Fresco" },
-      { name: "Tilapia Frita Corte Mariposa (450g)", description: "Servida con arroz, patacones y ensalada fresca.", price: 39000, tag: "Pescado" },
-      { name: "Ajiaco Nariñense", description: "Sopa tradicional de tres papas con pollo desmechado, arroz, aguacate, empanada de añejo, alcaparras y crema de leche.", price: 34000, tag: "Sopa Tradicional" },
-      { name: "Frijolada de la Hacienda", description: "Cazuela de frijoles con frito de cerdo, arroz, plátano maduro y aguacate fresco.", price: 35000, tag: "Cazuela" },
-      { name: "Sancocho Campesino", description: "Sopa campesina con pernil de pollo, hogao criollo, arroz y aguacate.", price: 34000, tag: "Sopa" },
-      { name: "Filete de Res Asado (200g)", description: "Acompañado de papa al horno gratinada con queso mozzarella y ensalada de aguacate.", price: 38000, tag: "Carnes" },
-      { name: "Empanadas de Añejo (2 unid.)", description: "Masa tradicional fermentada de maíz añejo rellena de guiso de carne, garbanzo, papa criolla y huevo, con ají casero.", price: 12000, tag: "Entrada Típica" },
-      { name: "Platanitos Tentación", description: "Plátano maduro en reducción artesanal de Cola Román con notas especiadas y cuajada fresca.", price: 10000, tag: "Entrada Dulce" },
-      { name: "Papas Criollas con Chorizo Santarrosano", description: "250g de chorizo con papas criollas doradas (ideal para compartir 2-3 personas).", price: 22000, tag: "Para Compartir" },
-      { name: "Cuajada con Miel de Caña Artesanal", description: "Postre autóctono de cuajada nariñense bañada en melado campesino.", price: 11000, tag: "Postre Tradicional" },
-      { name: "Hervidos Tradicionales Nariñenses", description: "Bebida caliente típica a base de frutas y aguardiente nariñense para calentar la tarde campestre.", price: 12000, tag: "Bebida Típica" },
+      { name: "Frito Pastuso Tradicional", description: "Pierna de cerdo crocante con crispetas, papa cocida, plátano maduro, queso campesino, ají de maní y limón.", price: 38000, tag: "Especialidad Nariñense", image: "/images/menu/frito-pastuso.jpg" },
+      { name: "Trucha Frita Corte Mariposa (450g)", description: "Trucha fresca servida con arroz, ensalada de mango de la región y patacones crocantes.", price: 39000, tag: "Pescado Fresco", image: "/images/menu/trucha-frita.jpg" },
+      { name: "Tilapia Frita Corte Mariposa (450g)", description: "Servida con arroz, patacones y ensalada fresca.", price: 39000, tag: "Pescado", image: "/images/menu/tilapia-frita.jpg" },
+      { name: "Ajiaco Nariñense", description: "Sopa tradicional de tres papas con pollo desmechado, arroz, aguacate, empanada de añejo, alcaparras y crema de leche.", price: 34000, tag: "Sopa Tradicional", image: "/images/menu/ajiaco-narinense.jpg" },
+      { name: "Frijolada de la Hacienda", description: "Cazuela de frijoles con frito de cerdo, arroz, plátano maduro y aguacate fresco.", price: 35000, tag: "Cazuela", image: "/images/menu/frijolada-hacienda.jpg" },
+      { name: "Sancocho Campesino", description: "Sopa campesina con pernil de pollo, hogao criollo, arroz y aguacate.", price: 34000, tag: "Sopa", image: "/images/menu/sancocho-campesino.jpg" },
+      { name: "Filete de Res Asado (200g)", description: "Acompañado de papa al horno gratinada con queso mozzarella y ensalada de aguacate.", price: 38000, tag: "Carnes", image: "/images/menu/filete-res.jpg" },
+      { name: "Empanadas de Añejo (2 unid.)", description: "Masa tradicional fermentada de maíz añejo rellena de guiso de carne, garbanzo, papa criolla y huevo, con ají casero.", price: 12000, tag: "Entrada Típica", image: "/images/menu/empanadas-anejo.jpg" },
+      { name: "Platanitos Tentación", description: "Plátano maduro en reducción artesanal de Cola Román con notas especiadas y cuajada fresca.", price: 10000, tag: "Entrada Dulce", image: "/images/menu/platanitos-tentacion.jpg" },
+      { name: "Papas Criollas con Chorizo Santarrosano", description: "250g de chorizo con papas criollas doradas (ideal para compartir 2-3 personas).", price: 22000, tag: "Para Compartir", image: "/images/menu/papas-chorizo.jpg" },
+      { name: "Cuajada con Miel de Caña Artesanal", description: "Postre autóctono de cuajada nariñense bañada en melado campesino.", price: 11000, tag: "Postre Tradicional", image: "/images/menu/cuajada-miel.jpg" },
+      { name: "Hervidos Tradicionales Nariñenses", description: "Bebida caliente típica a base de frutas y aguardiente nariñense para calentar la tarde campestre.", price: 12000, tag: "Bebida Típica", image: "/images/menu/hervidos-narinenses.jpg" },
     ],
   },
   {

@@ -216,8 +216,8 @@ export const ServicesTabs: React.FC = () => {
 
               <div className="relative rounded-2xl overflow-hidden h-72 sm:h-96 shadow-md">
                 <img
-                  src="/images/zonas-verdes.jpg"
-                  alt="Zonas verdes y almuerzos campestres"
+                  src="/images/restaurante-campestre.jpg"
+                  alt="Restaurante campestre y zonas verdes en Hacienda Escondida"
                   className="w-full h-full object-cover"
                 />
               </div>
