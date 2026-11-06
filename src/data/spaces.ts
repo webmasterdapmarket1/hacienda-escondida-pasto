@@ -23,7 +23,7 @@ export const SPACES_DATA: Space[] = [
     capacityNumber: 200,
     rentalPrice: "$3.000.000 COP",
     priceNumber: 3000000,
-    image: "/images/montaje-mesas.jpg",
+    image: "/images/salon-principal.jpg",
     description: "Salón amplio, cubierto y luminoso, diseñado para alojar banquetes de gala, fiestas de fin de año, matrimonios y asambleas. Su estructura brinda vista panorámica a los jardines y aislamiento térmico óptimo para el clima de la región.",
     features: [
       "Capacidad flexible para 150 a 200 invitados en mesas redondas o tablones",
