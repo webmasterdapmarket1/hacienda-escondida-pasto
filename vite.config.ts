@@ -8,4 +8,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    allowedHosts: [
+      'bid-massage-post-total.trycloudflare.com',
+      '.trycloudflare.com',
+    ],
+  },
 })
