@@ -1,0 +1,31 @@
+export const SITE = {
+  name: "Hacienda Escondida Pasto",
+  tagline: "La hacienda campestre elegante a minutos de Pasto, donde tu evento se entrega resuelto",
+  slogan: "Encuentra la magia de la felicidad",
+  phonePrimary: "+57 324 415 2618",
+  phonePrimaryClean: "573244152618",
+  phoneSecondary: "+57 311 737 7030",
+  phoneSecondaryClean: "573117377030",
+  email: "infohacienda.escondida@gmail.com",
+  contactPerson: "Jacobo Arciniegas Jurado",
+  salesRep: "Melisa",
+  address: "Dolores Viejo 35 Div 1, Vereda Dolores, Corregimiento de Mocondino, Pasto, Nariño",
+  distanceReference: "A solo 7 a 9 minutos del Centro Comercial Único Outlet",
+  googleRating: 4.2,
+  googleReviewCount: 73,
+  hours: {
+    restaurant: "Domingos y festivos de 12:00 m. a 3:00 p.m.",
+    events: "Lunes a sábado con cita previa (eventos privados hasta las 2:00 a.m.)",
+  },
+  social: {
+    instagram: "https://instagram.com/haciendaescondida.oficial",
+    instagramHandle: "@haciendaescondida.oficial",
+    tiktok: "https://tiktok.com/@hacienda.escondida.pasto",
+    tiktokHandle: "@hacienda.escondida.pasto",
+  },
+  maps: {
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.859664619478!2d-77.2608465!3d1.2185202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed53e2a09b3eb%3A0xd644b9a06ee06209!2sHacienda%20Escondida!5e0!3m2!1ses!2sco!4v1714000000000!5m2!1ses!2sco",
+    directionsUrl: "https://maps.google.com/?q=Hacienda+Escondida+Pasto+Mocondino",
+    wazeUrl: "https://waze.com/ul?q=Hacienda%20Escondida%20Pasto",
+  },
+}
