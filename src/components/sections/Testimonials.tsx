@@ -1,7 +1,7 @@
-import React from "react"
-import { Star, Quote, CheckCircle2 } from "lucide-react"
-import { REVIEWS_DATA } from "../../data/reviews"
-import { SITE } from "../../data/site"
+import React from "react";
+import { Star, Quote, CheckCircle2 } from "lucide-react";
+import { REVIEWS_DATA } from "../../data/reviews";
+import { SITE } from "../../data/site";
 
 export const Testimonials: React.FC = () => {
   return (
@@ -16,7 +16,10 @@ export const Testimonials: React.FC = () => {
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 text-xs text-[#BCD9C7] hover:text-white font-medium mb-4 transition-colors"
           >
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-            <span>{SITE.googleRating} de 5.0 en Google Business Profile ({SITE.googleReviewCount} reseñas) ↗</span>
+            <span>
+              {SITE.googleRating} de 5.0 en Google Business Profile (
+              {SITE.googleReviewCount} reseñas) ↗
+            </span>
           </a>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
@@ -47,7 +50,6 @@ export const Testimonials: React.FC = () => {
                       }`}
                     />
                   ))}
-                  <span className="text-[11px] text-[#BCD9C7] ml-2 font-medium">{rev.source}</span>
                 </div>
 
                 <Quote className="w-6 h-6 text-[#E36E5E] mb-3 opacity-60" />
@@ -59,8 +61,12 @@ export const Testimonials: React.FC = () => {
 
               <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <div className="font-semibold text-xs text-white">{rev.author}</div>
-                  <div className="text-[11px] text-[#BCD9C7] font-light">{rev.role}</div>
+                  <div className="font-semibold text-xs text-white">
+                    {rev.author}
+                  </div>
+                  <div className="text-[11px] text-[#BCD9C7] font-light">
+                    {rev.role}
+                  </div>
                 </div>
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
               </div>
@@ -69,5 +75,5 @@ export const Testimonials: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
