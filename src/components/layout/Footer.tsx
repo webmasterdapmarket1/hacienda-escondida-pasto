@@ -1,7 +1,15 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { MapPin, Phone, Mail, Clock, ShieldCheck, Heart, Navigation } from "lucide-react"
-import { SITE } from "../../data/site"
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ShieldCheck,
+  Heart,
+  Navigation,
+} from "lucide-react";
+import { SITE } from "../../data/site";
 
 export const Footer: React.FC = () => {
   return (
@@ -14,8 +22,12 @@ export const Footer: React.FC = () => {
               <MapPin className="w-5 h-5" />
             </div>
             <div>
-              <div className="font-semibold text-sm text-white">Cercanía Real</div>
-              <div className="text-xs text-[#BCD9C7]">7 a 9 minutos del Único Outlet de Pasto</div>
+              <div className="font-semibold text-sm text-white">
+                Cercanía Real
+              </div>
+              <div className="text-xs text-[#BCD9C7]">
+                7 a 9 minutos del Único Outlet de Pasto
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-center md:justify-start gap-3">
@@ -23,8 +35,12 @@ export const Footer: React.FC = () => {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <div className="font-semibold text-sm text-white">Plan B Antilluvia</div>
-              <div className="text-xs text-[#BCD9C7]">Salón Auxiliar cubierto garantizado</div>
+              <div className="font-semibold text-sm text-white">
+                Plan B Antilluvia
+              </div>
+              <div className="text-xs text-[#BCD9C7]">
+                Salón Auxiliar cubierto garantizado
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-center md:justify-start gap-3">
@@ -32,8 +48,12 @@ export const Footer: React.FC = () => {
               <Heart className="w-5 h-5" />
             </div>
             <div>
-              <div className="font-semibold text-sm text-white">Cocina Propia Nariñense</div>
-              <div className="text-xs text-[#BCD9C7]">Menús servidos a la hora acordada</div>
+              <div className="font-semibold text-sm text-white">
+                Cocina Propia Nariñense
+              </div>
+              <div className="text-xs text-[#BCD9C7]">
+                Menús servidos a la hora acordada
+              </div>
             </div>
           </div>
         </div>
@@ -60,7 +80,8 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-white/80 leading-relaxed font-light">
-              "{SITE.slogan}". Un entorno campestre sereno donde cada detalle de tu evento se entrega resuelto con hospitalidad nariñense.
+              "{SITE.slogan}". Un entorno campestre sereno donde cada detalle de
+              tu evento se entrega resuelto con hospitalidad nariñense.
             </p>
             <div className="text-xs text-[#BCD9C7] flex items-start gap-2 pt-2">
               <MapPin className="w-4 h-4 text-[#E36E5E] shrink-0 mt-0.5" />
@@ -76,7 +97,9 @@ export const Footer: React.FC = () => {
             </h3>
             <div className="space-y-3 text-sm text-white/80">
               <div>
-                <span className="font-semibold text-white block">Restaurante Campestre:</span>
+                <span className="font-semibold text-white block">
+                  Restaurante Campestre:
+                </span>
                 <span className="text-xs text-[#BCD9C7]">
                   {SITE.hours.restaurant}
                 </span>
@@ -85,7 +108,9 @@ export const Footer: React.FC = () => {
                 </span>
               </div>
               <div className="pt-1">
-                <span className="font-semibold text-white block">Eventos Privados:</span>
+                <span className="font-semibold text-white block">
+                  Eventos Privados:
+                </span>
                 <span className="text-xs text-[#BCD9C7]">
                   {SITE.hours.events}
                 </span>
@@ -140,8 +165,11 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-white/90 hover:text-[#BCD9C7] transition-colors"
                 >
-                  <svg className="w-4 h-4 text-[#E36E5E] fill-current" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  <svg
+                    className="w-4 h-4 text-[#E36E5E] fill-current"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                   </svg>
                   <span>{SITE.social.instagramHandle}</span>
                 </a>
@@ -176,10 +204,15 @@ export const Footer: React.FC = () => {
             </h3>
             <div className="text-xs text-white/70 space-y-2 leading-relaxed">
               <p>
-                <strong className="text-white">Reserva de fechas:</strong> 50% de anticipo al formalizar y 50% dos días antes del evento.
+                <strong className="text-white">Reserva de fechas:</strong> 50%
+                de anticipo al formalizar y 50% dos días antes del evento.
               </p>
               <p>
-                <strong className="text-white">Políticas de cancelación:</strong> Más de 120 días devolución 100%; entre 90 y 119 días retención del 60%; menos de 89 días no reembolsable.
+                <strong className="text-white">
+                  Políticas de cancelación:
+                </strong>{" "}
+                Más de 120 días devolución 100%; entre 90 y 119 días retención
+                del 60%; menos de 89 días no reembolsable.
               </p>
               <div className="pt-2">
                 <a
@@ -197,7 +230,14 @@ export const Footer: React.FC = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-white/60 gap-3">
-          <p>© {new Date().getFullYear()} Hacienda Escondida Pasto. Todos los derechos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} Hacienda Escondida Pasto. Todos los
+            derechos reservados.
+          </p>
+          <p className="flex items-center gap-1">
+            <span>Desarrollado por</span>
+            <a href="https://dapmarket.com.co/">Dapmarket</a>
+          </p>
           <p className="flex items-center gap-1">
             <span>Atención personalizada por</span>
             <span className="text-white font-medium">{SITE.contactPerson}</span>
@@ -206,5 +246,5 @@ export const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
