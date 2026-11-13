@@ -55,7 +55,7 @@ export const NosotrosEspacios: React.FC = () => {
                 Hacienda Escondida nació del deseo de ofrecerle a Pasto un espacio campestre distinguido que no exigiera desplazamientos desgastantes ni dejara a los anfitriones a merced del clima.
               </p>
               <p className="text-sm sm:text-base text-[#5E6763] font-light leading-relaxed">
-                Bajo la dirección de <strong>{SITE.contactPerson}</strong>, nuestro equipo cuida cada detalle de tu celebración: desde el parqueadero vigilado hasta la temperatura exacta en la que el lomo o la trucha llegan a la mesa de tus invitados.
+                Bajo la dirección de <strong>{SITE.contactPerson}</strong>, nuestro equipo cuida cada detalle de tu celebración: desde el parqueadero privado hasta la temperatura exacta en la que el lomo o la trucha llegan a la mesa de tus invitados, en un entorno campestre <strong>Pet Friendly</strong> pensado para toda la familia.
               </p>
 
               <div className="pt-2 border-t border-gray-100 flex items-center gap-4">
@@ -131,11 +131,6 @@ export const NosotrosEspacios: React.FC = () => {
                     <h3 className="font-serif text-3xl font-bold text-[#1E3A2B]">
                       {space.name}
                     </h3>
-                    {space.priceNumber > 0 && (
-                      <span className="font-serif text-xl font-bold text-[#E36E5E]">
-                        {space.rentalPrice} <span className="text-xs text-gray-400 font-normal">alquiler básico</span>
-                      </span>
-                    )}
                   </div>
 
                   <p className="text-xs uppercase tracking-wider text-[#E36E5E] font-medium">

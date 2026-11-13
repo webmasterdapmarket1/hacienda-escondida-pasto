@@ -18,7 +18,7 @@ export const SpacesShowcase: React.FC = () => {
               Espacios Adaptados al Tamaño de tu Celebración
             </h2>
             <p className="text-base sm:text-lg text-[#5E6763] font-light mt-3">
-              Desde grandes fiestas empresariales de fin de año hasta reuniones familiares íntimas.
+              Desde grandes eventos empresariales y bodas hasta reuniones familiares íntimas.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export const SpacesShowcase: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                  {/* Plan B badge */}
+                  {/* Plan Antilluvia badge */}
                   {space.planBBadge && (
                     <div className="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5" />
@@ -75,12 +75,6 @@ export const SpacesShowcase: React.FC = () => {
                         <span>{space.capacity}</span>
                       </div>
                     </div>
-                    {space.priceNumber > 0 && (
-                      <div className="text-right">
-                        <span className="text-[10px] text-white/70 uppercase block">Alquiler básico</span>
-                        <span className="text-sm font-semibold text-white">{space.rentalPrice}</span>
-                      </div>
-                    )}
                   </div>
                 </div>
 
