@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
 
         {/* Subtitle / Paragraph */}
         <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed mb-10 text-balance">
-          Una casa campestre con raíces nariñenses que cuida a quien llega. Dos salones adaptados a tu celebración (para 200 o 45 personas), cocina tradicional propia y logística a tiempo sin afán.
+          Una casa campestre con raíces nariñenses que cuida a quien llega. Dos salones adaptados a tu celebración (hasta 200 personas), cocina tradicional propia y logística a tiempo sin afán.
         </p>
 
         {/* Dual Call to Actions */}
@@ -63,17 +63,17 @@ export const Hero: React.FC = () => {
               <Users className="w-4 h-4 text-[#E36E5E]" />
               <span>Salón Principal</span>
             </div>
-            <div className="font-serif text-xl sm:text-2xl font-bold">150–200 pax</div>
+            <div className="font-serif text-xl sm:text-2xl font-bold">Hasta 200 pax</div>
             <p className="text-xs text-white/70 mt-1 font-light">Grandes banquetes y convenciones</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-white transition-transform hover:-translate-y-1">
             <div className="flex items-center gap-2 text-[#BCD9C7] text-xs font-medium uppercase tracking-wider mb-1">
               <ShieldCheck className="w-4 h-4 text-[#BCD9C7]" />
-              <span>Plan B Antilluvia</span>
+              <span>Plan Antilluvia</span>
             </div>
-            <div className="font-serif text-xl sm:text-2xl font-bold">Hasta 45 pax</div>
-            <p className="text-xs text-white/70 mt-1 font-light">Salón auxiliar cubierto garantizado</p>
+            <div className="font-serif text-xl sm:text-2xl font-bold">Capacidad flexible</div>
+            <p className="text-xs text-white/70 mt-1 font-light">Salón auxiliar cubierto</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-white transition-transform hover:-translate-y-1">
