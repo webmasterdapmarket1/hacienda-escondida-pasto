@@ -57,8 +57,7 @@ export const MENUS_DATA: MenuSection[] = [
     id: "buffet",
     title: "Desayuno Tipo Buffet",
     subtitle: "Barra libre con estaciones calientes, frías, panadería y frutas frescas",
-    pricePerPerson: 47000,
-    note: "Perfecto para jornadas empresariales matutinas, novenas y desayunos de trabajo con acceso libre durante el servicio.",
+    note: "Perfecto para jornadas empresariales matutinas, foros y desayunos de trabajo con acceso libre durante el servicio.",
     items: [
       { name: "Estación de Huevos al Gusto", description: "Huevos revueltos sencillos, con salchicha ranchera o pericos al estilo tradicional.", tag: "Calientes" },
       { name: "Panadería & Amasijos", description: "Croissants, arepas de maíz, pan de mantequilla, tostadas y variedad de pan dulce.", tag: "Panadería" },

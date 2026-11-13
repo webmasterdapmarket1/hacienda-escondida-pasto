@@ -12,12 +12,9 @@ export const ServicesTabs: React.FC = () => {
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#E36E5E] bg-[#FDECE9] px-3.5 py-1.5 rounded-full mb-3">
             <span>Experiencias</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A2B] tracking-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A2B] tracking-tight">
             Servicios Diseñados para Cada Ocasión
           </h2>
-          <p className="text-base text-[#5E6763] font-light">
-            Soluciones integrales con gastronomía nariñense propia y logística garantizada.
-          </p>
         </div>
 
         {/* Tab Buttons */}
@@ -44,7 +41,7 @@ export const ServicesTabs: React.FC = () => {
               }`}
             >
               <Heart className="w-4 h-4 text-[#E36E5E]" />
-              <span>Sociales</span>
+              <span>Familiar</span>
             </button>
 
             <button
@@ -67,27 +64,27 @@ export const ServicesTabs: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center animate-in fade-in duration-300">
               <div className="space-y-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#E36E5E] bg-[#FDECE9] px-3 py-1 rounded-full">
-                  Empresas • Fin de Año • Novenas
+                  Foros • Convenciones • Reuniones • Fiestas
                 </span>
                 <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#1E3A2B] leading-tight">
-                  Fiestas de fin de año e integraciones empresariales a 8 minutos de Pasto
+                  El mejor espacio para fiestas y eventos corporativos en Pasto
                 </h3>
                 <p className="text-[#5E6763] text-sm sm:text-base font-light leading-relaxed">
-                  Para gerencias y áreas de Talento Humano que buscan precisión: menú servido a la hora exacta, parqueadero para todo el personal y facturación electrónica formal.
+                  Un entorno campestre bien construido y versátil para organizar foros, convenciones, reuniones de dirección, integraciones, fiestas y eventos corporativos con total privacidad y parqueadero privado.
                 </p>
 
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Factura electrónica oficial y documentación legal completa</span>
+                    <span>No te preocupes por el tamaño de los platos, somos generosos</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Parqueadero amplio y seguro para vehículos y buses de transporte especial</span>
+                    <span>Flexibles en las negociaciones</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Opciones de Desayuno Buffet ($47.000) o Almuerzo Tradicional ($70.000)</span>
+                    <span>Llegar no será un problema: somos la única opción a 8 minutos de Pasto</span>
                   </div>
                 </div>
 
@@ -119,7 +116,7 @@ export const ServicesTabs: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E3A2B]/80 via-transparent to-transparent flex items-end p-6 text-white">
                   <p className="text-xs font-light text-white/90">
-                    Celebración nocturna con iluminación decorativa y música en vivo en Hacienda Escondida.
+                    Celebración empresarial con iluminación cálida y atención dedicada en Hacienda Escondida.
                   </p>
                 </div>
               </div>
@@ -136,30 +133,30 @@ export const ServicesTabs: React.FC = () => {
                   Bodas campestres y celebraciones familiares memorables
                 </h3>
                 <p className="text-[#5E6763] text-sm sm:text-base font-light leading-relaxed">
-                  Espacios fotogénicos con jardines y entorno campestre. Te ofrecemos la tranquilidad de traer a tus propios aliados en decoración floral, sonido y orquesta, mientras nosotros garantizamos un banquete servido con calidez.
+                  Espacios fotogénicos con jardines, ambiente Pet Friendly y entorno campestre. Te ofrecemos la confianza para trabajar con los mejores aliados en decoración floral, sonido y orquesta, mientras nosotros garantizamos un servicio con calidez.
                 </p>
 
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Prueba de menú incluida para novios y familias</span>
+                    <span>Experiencia y calidez en el servicio</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Plan B antilluvia garantizado con nuestro Salón Auxiliar</span>
+                    <span>Plan Antilluvia</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Libertad total para contratar a tu decorador y fotógrafo favorito</span>
+                    <span>¿Te gustaría que te ayudemos con la logística de tu evento? ¡Tenemos la solución! Escríbenos.</span>
                   </div>
                 </div>
 
                 <div className="pt-4">
                   <Link
-                    to="/eventos-sociales"
+                    to="/eventos-familiares"
                     className="inline-flex items-center gap-2 bg-[#E36E5E] hover:bg-[#D05C4D] text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors"
                   >
-                    <span>Ver propuesta familiar completa</span>
+                    <span>Ver paquetes de Bodas y Familiares</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -168,7 +165,7 @@ export const ServicesTabs: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden h-72 sm:h-96 shadow-md">
                 <img
                   src="/images/evento-exterior.jpg"
-                  alt="Ceremonia Social al Aire Libre"
+                  alt="Ceremonia Familiar al Aire Libre"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -182,24 +179,24 @@ export const ServicesTabs: React.FC = () => {
                   Exclusivo Domingos y Festivos • 12:00 m. a 3:00 p.m.
                 </span>
                 <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#1E3A2B] leading-tight">
-                  Cocina tradicional nariñense en un ambiente campestre sereno
+                  Cocina tradicional nariñense en un ambiente familiar
                 </h3>
                 <p className="text-[#5E6763] text-sm sm:text-base font-light leading-relaxed">
-                  El plan familiar dominical por excelencia. Disfruta de nuestro tradicional frito pastuso, truchas frescas al corte mariposa, sancocho campesino y ajiaco caliente mientras tus hijos disfrutan de los amplios prados verdes.
+                  El plan dominical por excelencia. Disfruta de nuestro frito pastuso, locro, cazuela de mariscos y frijolada con panceta al horno mientras tus hijos disfrutan de los amplios prados verdes.
                 </p>
 
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Frito pastuso tradicional con crispetas y ají de maní ($38.000)</span>
+                    <span>Cercanía: a solo 8 minutos del Único Outlet de Pasto</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Trucha frita corte mariposa de 450g con ensalada de mango ($39.000)</span>
+                    <span>Gastronomía nariñense propia (nos enfocamos en lo nuestro: un frito bien presentado y bien hecho)</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-[#2C302E]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Entradas típicas: empanadas de añejo y platanitos tentación</span>
+                    <span>Pet friendly: ven a disfrutar el domingo con toda tu familia y tus mascotas</span>
                   </div>
                 </div>
 
@@ -216,8 +213,8 @@ export const ServicesTabs: React.FC = () => {
 
               <div className="relative rounded-2xl overflow-hidden h-72 sm:h-96 shadow-md">
                 <img
-                  src="/images/restaurante-campestre.jpg"
-                  alt="Restaurante campestre y zonas verdes en Hacienda Escondida"
+                  src="/images/menu/frito-pastuso.jpg"
+                  alt="Frito pastuso y gastronomía nariñense en Hacienda Escondida"
                   className="w-full h-full object-cover"
                 />
               </div>
