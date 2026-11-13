@@ -18,7 +18,7 @@ export const REVIEWS_DATA: Review[] = [
   },
   {
     author: "Ing. Carlos Villota",
-    role: "Gerente Operaciones (Evento Fin de Año)",
+    role: "Gerente Operaciones (Evento Corporativo)",
     rating: 5,
     date: "Hace 3 meses",
     source: "Google Business Profile",

@@ -22,10 +22,10 @@ export const EventosCorporativos: React.FC = () => {
             <span>Soluciones B2B para Empresas de Pasto y Nariño</span>
           </div>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Fin de Año Empresarial e Integraciones a 8 Minutos de Pasto
+            Foros, Convenciones y Eventos Corporativos a 8 Minutos de Pasto
           </h1>
           <p className="text-base sm:text-lg text-white/90 font-light leading-relaxed mb-8">
-            Diseñado para directores de Talento Humano y gerentes que valoran el cumplimiento exacto de horarios, facturación electrónica y parqueadero seguro para todo su equipo.
+            El mejor espacio campestre bien construido para áreas de Recursos Humanos y gerencias: salones de eventos y salas de reuniones en Pasto con cumplimiento exacto de horarios, platos generosos y parqueadero privado.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -72,7 +72,7 @@ export const EventosCorporativos: React.FC = () => {
                 Parqueadero para Todo el Equipo
               </h3>
               <p className="text-sm text-[#5E6763] font-light leading-relaxed">
-                Parqueadero privado interno con capacidad vigilada para vehículos personales, camionetas corporativas y buses de transporte especial de colaboradores.
+                Parqueadero privado interno con amplia capacidad para vehículos personales, camionetas corporativas y buses de transporte especial de colaboradores.
               </p>
             </div>
 
@@ -109,37 +109,31 @@ export const EventosCorporativos: React.FC = () => {
                 <span className="text-xs font-semibold text-emerald-700 uppercase tracking-wider">
                   Matutino / Jornadas de Trabajo
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-2">
+                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-3">
                   Desayuno Tipo Buffet
                 </h3>
-                <div className="text-2xl font-serif font-bold text-[#E36E5E] mb-3">
-                  $47.000 <span className="text-xs text-gray-500 font-normal">/ colaborador</span>
-                </div>
                 <p className="text-xs text-[#5E6763] font-light leading-relaxed mb-4">
                   Barra libre con estaciones calientes (huevos al gusto), tabla de jamones y quesos, panadería nariñense, frutas frescas, yogur, cereales y café caliente ilimitado.
                 </p>
               </div>
               <div className="text-xs text-emerald-800 bg-emerald-50 p-2.5 rounded-lg">
-                Ideal para asambleas gremiales y capacitaciones matutinas.
+                Ideal para foros, asambleas gremiales y capacitaciones matutinas.
               </div>
             </div>
 
             <div className="bg-white p-7 rounded-2xl border-2 border-[#E36E5E] shadow-md space-y-4 flex flex-col justify-between relative">
               <div className="absolute -top-3 right-6 bg-[#E36E5E] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-                Más Elegido Fin de Año
+                Más Elegido por Empresas
               </div>
               <div>
                 <span className="text-xs font-semibold text-[#E36E5E] uppercase tracking-wider">
-                  Gala de Fin de Año / Banquete
+                  Convenciones / Recepciones Corporativas
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-2">
+                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-3">
                   Menú Tradicional de 3 Tiempos
                 </h3>
-                <div className="text-2xl font-serif font-bold text-[#E36E5E] mb-3">
-                  $70.000 <span className="text-xs text-gray-500 font-normal">/ colaborador</span>
-                </div>
                 <p className="text-xs text-[#5E6763] font-light leading-relaxed mb-4">
-                  Entrada (crema artesanal o escalopas), plato fuerte a elegir (Filet mignon de cerdo, Pollo relleno Mornay o Lomo en velouté) y postre en copa de martini.
+                  Entrada (crema artesanal o escalopas), plato fuerte generoso a elegir (Filet mignon de cerdo, Pollo relleno Mornay o Lomo en velouté) y postre en copa de martini.
                 </p>
               </div>
               <div className="text-xs text-[#E36E5E] bg-[#FDECE9] p-2.5 rounded-lg">
@@ -152,18 +146,15 @@ export const EventosCorporativos: React.FC = () => {
                 <span className="text-xs font-semibold text-amber-700 uppercase tracking-wider">
                   Integraciones Campestres
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-2">
+                <h3 className="font-serif text-2xl font-bold text-[#1E3A2B] mt-1 mb-3">
                   Cocina Tradicional Nariñense
                 </h3>
-                <div className="text-2xl font-serif font-bold text-[#E36E5E] mb-3">
-                  $34.000 – $39.000 <span className="text-xs text-gray-500 font-normal">/ plato</span>
-                </div>
                 <p className="text-xs text-[#5E6763] font-light leading-relaxed mb-4">
-                  Platos generosos servidos al momento: Frito pastuso con crispetas ($38.000), Trucha frita mariposa ($39.000) o Ajiaco campesino caliente ($34.000).
+                  Platos generosos servidos al momento: Frito pastuso con crispetas, Trucha frita corte mariposa, Frijolada con panceta al horno, Cazuela de mariscos o Ajiaco campesino caliente.
                 </p>
               </div>
               <div className="text-xs text-amber-900 bg-amber-50 p-2.5 rounded-lg">
-                El favorito para integraciones relajadas de fin de semana.
+                El favorito para integraciones relajadas en nuestras zonas verdes.
               </div>
             </div>
           </div>

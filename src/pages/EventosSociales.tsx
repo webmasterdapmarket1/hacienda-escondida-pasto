@@ -7,25 +7,25 @@ import { SPACES_DATA } from "../data/spaces"
 export const EventosSociales: React.FC = () => {
   return (
     <div className="bg-[#FAF9F5]">
-      {/* Hero Banner Sociales */}
+      {/* Hero Banner Familiares */}
       <section className="relative py-24 bg-[#1E3A2B] text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-30">
           <img
             src="/images/evento-exterior.jpg"
-            alt="Bodas y Eventos Sociales Hacienda Escondida"
+            alt="Bodas y Eventos Familiares Hacienda Escondida"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 text-xs text-[#BCD9C7] font-medium mb-4">
             <Heart className="w-3.5 h-3.5 text-[#E36E5E]" />
-            <span>Bodas 2026-2027 • XV Años • Grados • Celebraciones Familiares</span>
+            <span>Bodas • XV Años • Grados • Celebraciones Familiares • Pet Friendly</span>
           </div>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             El Escenario Campestre que Soñaste, con la Certeza que Necesitas
           </h1>
           <p className="text-base sm:text-lg text-white/90 font-light leading-relaxed mb-8">
-            Espacios rodeados de jardines y lago a minutos de Pasto. Con la tranquilidad de tener un Plan B antilluvia cubierto y cata de menú previa con Jacobo Arciniegas.
+            Espacios rodeados de jardines Pet Friendly y lago a minutos de Pasto. Con la tranquilidad de contar con nuestro Plan Antilluvia cubierto y la asesoría personal de Jacobo Arciniegas.
           </p>
 
           <a
@@ -55,7 +55,7 @@ export const EventosSociales: React.FC = () => {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1E3A2B]">
-                Plan B Antilluvia Real
+                Plan Antilluvia
               </h3>
               <p className="text-xs text-[#5E6763] font-light leading-relaxed">
                 Si la tarde se nubla o llueve durante la ceremonia campestre, dispones del Salón Auxiliar o del Salón Principal cubiertos para continuar sin pausas ni incomodidades.
@@ -67,10 +67,10 @@ export const EventosSociales: React.FC = () => {
                 <Utensils className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1E3A2B]">
-                Prueba de Menú Incluida
+                Asesoría de Menú Personalizada
               </h3>
               <p className="text-xs text-[#5E6763] font-light leading-relaxed">
-                Prueba previamente cada plato con tu pareja o familia. Ajustamos puntos de cocción, salsas, acompañamientos y postres con Jacobo antes del evento.
+                Experiencia y calidez en el servicio: las familias hablan directamente con Jacobo Arciniegas para definir platos, salsas, acompañamientos y presentación.
               </p>
             </div>
 
@@ -79,10 +79,10 @@ export const EventosSociales: React.FC = () => {
                 <Music className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1E3A2B]">
-                Tus Propios Aliados
+                Los Mejores Aliados y Logística
               </h3>
               <p className="text-xs text-[#5E6763] font-light leading-relaxed">
-                Libertad absoluta para contratar a tu decorador floral, orquesta, DJ, pastelero y fotógrafo de confianza. No cobramos sobrecostos ni comisiones ocultas de proveedores.
+                Te ofrecemos la confianza para trabajar con los mejores aliados en decoración floral, sonido y orquesta. ¿Te gustaría que te ayudemos con la logística? ¡Tenemos la solución!
               </p>
             </div>
 

@@ -38,7 +38,7 @@ export const LocationMap: React.FC = () => {
               <div className="flex items-start gap-2.5">
                 <Shield className="w-4 h-4 text-[#1E3A2B] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Parqueadero interno:</strong> Capacidad vigilada dentro del predio privado.
+                  <strong>Parqueadero interno:</strong> Parqueadero privado dentro del predio.
                 </span>
               </div>
             </div>

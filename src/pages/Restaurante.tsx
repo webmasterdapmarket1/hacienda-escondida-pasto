@@ -111,9 +111,9 @@ export const Restaurante: React.FC = () => {
                 <Users className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs uppercase tracking-wider text-[#BCD9C7] font-semibold block">Plan Familiar</span>
+                <span className="text-xs uppercase tracking-wider text-[#BCD9C7] font-semibold block">Plan Familiar • Pet Friendly</span>
                 <span className="font-serif text-lg font-bold text-[#1E3A2B]">Zonas Verdes Abiertas</span>
-                <span className="text-xs text-[#5E6763] block">Parqueadero gratuito vigilado</span>
+                <span className="text-xs text-[#5E6763] block">Parqueadero privado y juegos para niños</span>
               </div>
             </div>
           </div>
