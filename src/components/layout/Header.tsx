@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
     {
       name: "Eventos",
       children: [
-        { name: "Eventos Familiares", path: "/eventos-sociales" },
+        { name: "Eventos Familiares", path: "/eventos-familiares" },
         { name: "Eventos Corporativos", path: "/eventos-corporativos" },
       ],
     },
@@ -42,7 +42,9 @@ export const Header: React.FC = () => {
   }
 
   const isEventosActive =
-    isActive("/eventos-sociales") || isActive("/eventos-corporativos")
+    isActive("/eventos-familiares") ||
+    isActive("/eventos-sociales") ||
+    isActive("/eventos-corporativos")
 
   return (
     <>
