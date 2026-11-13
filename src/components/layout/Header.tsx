@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { Menu, X, Phone, Calendar, MapPin, Sparkles } from "lucide-react"
+import { Menu, X, Phone, Calendar, MapPin, Sparkles, ChevronDown } from "lucide-react"
 import { SITE } from "../../data/site"
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [eventosDropdownOpen, setEventosDropdownOpen] = useState(false)
+  const [mobileEventosOpen, setMobileEventosOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -18,12 +20,19 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     setMobileMenuOpen(false)
+    setEventosDropdownOpen(false)
+    setMobileEventosOpen(false)
   }, [location])
 
-  const navLinks = [
-    { name: "Salones y Espacios", path: "/nosotros-y-espacios" },
-    { name: "Eventos Sociales", path: "/eventos-sociales" },
-    { name: "Eventos Corporativos", path: "/eventos-corporativos" },
+  const navItems = [
+    {
+      name: "Eventos",
+      children: [
+        { name: "Eventos Familiares", path: "/eventos-sociales" },
+        { name: "Eventos Corporativos", path: "/eventos-corporativos" },
+      ],
+    },
+    { name: "Salones Sociales", path: "/nosotros-y-espacios" },
     { name: "Restaurante", path: "/restaurante" },
   ]
 
@@ -31,6 +40,9 @@ export const Header: React.FC = () => {
     if (path === "/" && location.pathname !== "/") return false
     return location.pathname.startsWith(path)
   }
+
+  const isEventosActive =
+    isActive("/eventos-sociales") || isActive("/eventos-corporativos")
 
   return (
     <>
@@ -89,22 +101,73 @@ export const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-7">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium transition-colors relative py-1 ${
-                  isActive(link.path)
-                    ? "text-[#E36E5E] font-semibold"
-                    : "text-[#2C302E] hover:text-[#E36E5E]"
-                }`}
-              >
-                {link.name}
-                {isActive(link.path) && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#E36E5E] rounded-full" />
-                )}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.children ? (
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => setEventosDropdownOpen(true)}
+                  onMouseLeave={() => setEventosDropdownOpen(false)}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setEventosDropdownOpen((prev) => !prev)}
+                    aria-expanded={eventosDropdownOpen}
+                    className={`text-sm font-medium transition-colors relative py-1 flex items-center gap-1 cursor-pointer ${
+                      isEventosActive
+                        ? "text-[#E36E5E] font-semibold"
+                        : "text-[#2C302E] hover:text-[#E36E5E]"
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        eventosDropdownOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                    {isEventosActive && (
+                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#E36E5E] rounded-full" />
+                    )}
+                  </button>
+
+                  {eventosDropdownOpen && (
+                    <div className="absolute left-0 top-full pt-2 w-52 z-50">
+                      <div className="bg-white rounded-xl shadow-lg border border-gray-100 py-2">
+                        {item.children.map((subItem) => (
+                          <Link
+                            key={subItem.path}
+                            to={subItem.path}
+                            onClick={() => setEventosDropdownOpen(false)}
+                            className={`block px-4 py-2.5 text-sm transition-colors ${
+                              isActive(subItem.path)
+                                ? "bg-[#FDECE9] text-[#E36E5E] font-semibold"
+                                : "text-[#2C302E] hover:bg-black/5 hover:text-[#E36E5E]"
+                            }`}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path!}
+                  className={`text-sm font-medium transition-colors relative py-1 ${
+                    isActive(item.path!)
+                      ? "text-[#E36E5E] font-semibold"
+                      : "text-[#2C302E] hover:text-[#E36E5E]"
+                  }`}
+                >
+                  {item.name}
+                  {isActive(item.path!) && (
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#E36E5E] rounded-full" />
+                  )}
+                </Link>
+              )
+            )}
           </nav>
 
           {/* Action CTAs */}
@@ -153,19 +216,58 @@ export const Header: React.FC = () => {
                 Navegación
               </div>
               <div className="flex flex-col space-y-1">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    className={`px-3 py-3 rounded-xl text-base font-medium transition-colors ${
-                      isActive(link.path)
-                        ? "bg-[#FDECE9] text-[#E36E5E] font-semibold"
-                        : "text-[#2C302E] hover:bg-black/5"
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+                {navItems.map((item) =>
+                  item.children ? (
+                    <div key={item.name} className="flex flex-col">
+                      <button
+                        type="button"
+                        onClick={() => setMobileEventosOpen((prev) => !prev)}
+                        aria-expanded={mobileEventosOpen}
+                        className={`px-3 py-3 rounded-xl text-base font-medium transition-colors flex items-center justify-between w-full text-left ${
+                          isEventosActive
+                            ? "bg-[#FDECE9] text-[#E36E5E] font-semibold"
+                            : "text-[#2C302E] hover:bg-black/5"
+                        }`}
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform duration-200 ${
+                            mobileEventosOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {mobileEventosOpen && (
+                        <div className="flex flex-col pl-4 mt-1 space-y-1">
+                          {item.children.map((subItem) => (
+                            <Link
+                              key={subItem.path}
+                              to={subItem.path}
+                              className={`px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                                isActive(subItem.path)
+                                  ? "bg-[#FDECE9] text-[#E36E5E] font-semibold"
+                                  : "text-[#2C302E] hover:bg-black/5"
+                              }`}
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      key={item.path}
+                      to={item.path!}
+                      className={`px-3 py-3 rounded-xl text-base font-medium transition-colors ${
+                        isActive(item.path!)
+                          ? "bg-[#FDECE9] text-[#E36E5E] font-semibold"
+                          : "text-[#2C302E] hover:bg-black/5"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                )}
               </div>
             </div>
 

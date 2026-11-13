@@ -99,7 +99,7 @@ export const QuoteForm: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                   {[
                     "Evento Empresarial / Fin de Año",
-                    "Evento Social (Boda, XV, Grado)",
+                    "Evento Familiar (Boda, XV, Grado)",
                     "Reserva Restaurante Dominical",
                   ].map((type) => (
                     <button

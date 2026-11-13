@@ -159,7 +159,7 @@ export const ServicesTabs: React.FC = () => {
                     to="/eventos-sociales"
                     className="inline-flex items-center gap-2 bg-[#E36E5E] hover:bg-[#D05C4D] text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors"
                   >
-                    <span>Ver paquetes de Bodas y Sociales</span>
+                    <span>Ver propuesta familiar completa</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
