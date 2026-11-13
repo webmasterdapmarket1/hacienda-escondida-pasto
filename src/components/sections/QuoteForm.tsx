@@ -8,10 +8,10 @@ export const QuoteForm: React.FC = () => {
     name: "",
     phone: "",
     email: "",
-    eventType: "Evento Empresarial / Fin de Año",
+    eventType: "Evento Empresarial",
     date: "",
     guests: 50,
-    menuInterest: "Menú Tradicional de 3 Tiempos ($70.000)",
+    menuInterest: "Menú Tradicional de 3 Tiempos",
     invoiceRequired: false,
     notes: "",
   })
@@ -98,8 +98,8 @@ export const QuoteForm: React.FC = () => {
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                   {[
-                    "Evento Empresarial / Fin de Año",
-                    "Evento Familiar (Boda, XV, Grado)",
+                    "Evento Empresarial",
+                    "Evento Familiar",
                     "Reserva Restaurante Dominical",
                   ].map((type) => (
                     <button
@@ -172,20 +172,20 @@ export const QuoteForm: React.FC = () => {
                   onChange={(e) => setFormData({ ...formData, menuInterest: e.target.value })}
                   className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#E36E5E]/20 focus:border-[#E36E5E]"
                 >
-                  <option value="Menú Tradicional de 3 Tiempos ($70.000/inv)">
-                    Menú Tradicional de 3 Tiempos — $70.000 / invitado (Filet mignon, pollo relleno o lomo)
+                  <option value="Menú Tradicional de 3 Tiempos">
+                    Menú Tradicional de 3 Tiempos (Filet mignon, pollo relleno o lomo)
                   </option>
-                  <option value="Desayuno Buffet Libre ($47.000/inv)">
-                    Desayuno Tipo Buffet — $47.000 / persona (Estaciones libres calientes y frías)
+                  <option value="Platos Campestres / A la Carta">
+                    Platos Campestres / A la Carta (Frito pastuso, truchas, ajiaco, cazuela)
                   </option>
-                  <option value="Cocina Nariñense Tradicional a la Carta ($34.000-$39.000)">
-                    Platos Tradicionales a la Carta (Frito pastuso, truchas, ajiaco)
+                  <option value="Desayuno Tipo Buffet">
+                    Desayuno Tipo Buffet (Estaciones libres calientes y frías)
                   </option>
-                  <option value="Refrigerios y Pasabocas Empresariales (desde $4.000)">
+                  <option value="Refrigerios y Pasabocas">
                     Refrigerios empresariales y pasabocas individuales
                   </option>
-                  <option value="Solo Alquiler de Salón (Sin paquete de comida)">
-                    Solo alquiler de salón (Salón Principal $3M / Auxiliar $1M)
+                  <option value="Solo alquiler de salón">
+                    Solo alquiler de salón
                   </option>
                 </select>
               </div>
