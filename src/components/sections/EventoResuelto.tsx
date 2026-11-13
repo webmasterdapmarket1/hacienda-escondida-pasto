@@ -1,32 +1,31 @@
 import React from "react"
-import { ShieldCheck, Clock, MapPin, Car, Sparkles, CheckCircle2 } from "lucide-react"
-import { SITE } from "../../data/site"
+import { Utensils, HeartHandshake, MapPin, PawPrint, Sparkles, CheckCircle2 } from "lucide-react"
 
 export const EventoResuelto: React.FC = () => {
   const pillars = [
     {
-      icon: <Clock className="w-6 h-6 text-[#E36E5E]" />,
-      title: "Menús servidos a la hora acordada",
-      desc: "Nuestra cocina opera in situ con equipo propio. Eliminamos los retrasos típicos de catering externo: tus invitados almuerzan o cenan a la hora programada en tu itinerario.",
-      highlight: "Cocina propia nariñense",
-    },
-    {
-      icon: <ShieldCheck className="w-6 h-6 text-[#BCD9C7]" />,
-      title: "Plan Antilluvia",
-      desc: "El clima de montaña no arruinará tu celebración. Si llueve durante tu momento campestre exterior, el Salón Auxiliar (45 pax) o el Salón Principal (200 pax) reciben a tu grupo bajo techo de inmediato.",
-      highlight: "Salón auxiliar cubierto",
-    },
-    {
       icon: <MapPin className="w-6 h-6 text-[#E36E5E]" />,
-      title: "A 8 minutos del Único Outlet",
-      desc: "Se acabaron los viajes agotadores de hora y media por trochas. Estamos en la Vereda Dolores (Mocondino), a minutos de Pasto, con acceso completamente pavimentado y seguro.",
-      highlight: "7 a 9 min de trayecto",
+      title: "Cercanía y campo sin preocupaciones",
+      desc: "No te preocupes por nada y disfruta: fuera de la ciudad pero a solo 8 minutos del Único Outlet, en una hacienda bien construida con vía pavimentada y amplio parqueadero privado.",
+      highlight: "Cercanía y parqueadero privado",
     },
     {
-      icon: <Car className="w-6 h-6 text-[#BCD9C7]" />,
-      title: "Parqueadero privado para todo tu equipo",
-      desc: "Espacio amplio dentro del mismo predio. Capacidad para vehículos particulares, vans y buses empresariales sin congestiones ni riesgos en la vía.",
-      highlight: "Parqueadero privado",
+      icon: <Utensils className="w-6 h-6 text-[#BCD9C7]" />,
+      title: "Platos típicos gourmet",
+      desc: "Nuestra cocina propia eleva la tradición nariñense y la gastronomía de eventos con porciones generosas, excelente presentación y platos servidos calientes a la hora acordada.",
+      highlight: "Cocina propia en casa",
+    },
+    {
+      icon: <HeartHandshake className="w-6 h-6 text-[#E36E5E]" />,
+      title: "El servicio más dedicado para ti",
+      desc: "Seremos tu aliado en el momento más importante de tu vida. Jacobo Arciniegas y su equipo te acompañan personalmente de principio a fin para cuidar cada detalle.",
+      highlight: "Atención personal de Jacobo",
+    },
+    {
+      icon: <PawPrint className="w-6 h-6 text-[#BCD9C7]" />,
+      title: "Espacio 100% Pet Friendly",
+      desc: "Sabemos que tus mascotas hacen parte de tu familia. Nuestras amplias zonas verdes y jardines campestres están abiertos para que disfruten contigo.",
+      highlight: "Pet Friendly",
     },
   ]
 
@@ -40,10 +39,10 @@ export const EventoResuelto: React.FC = () => {
             <span>Propuesta de Valor</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A2B] tracking-tight mb-4">
-            Tu Evento, Completamente Resuelto
+            Un evento son muchos detalles, ¿te quieres arriesgar el día más importante de tu vida?
           </h2>
           <p className="text-base sm:text-lg text-[#5E6763] font-light leading-relaxed">
-            Eliminamos la incertidumbre, el estrés logístico y la falta de garantías. Nosotros nos ocupamos de la infraestructura y la cocina; tú y tus invitados disfrutan.
+            Seremos tu aliado en un lugar campestre bien construido a minutos de Pasto. Nosotros nos ocupamos de la gastronomía y el servicio; tú y tus invitados solo se dedican a disfrutar.
           </p>
         </div>
 
