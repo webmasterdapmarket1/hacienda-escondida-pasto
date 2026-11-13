@@ -36,10 +36,10 @@ export const Footer: React.FC = () => {
             </div>
             <div>
               <div className="font-semibold text-sm text-white">
-                Plan B Antilluvia
+                Plan Antilluvia
               </div>
               <div className="text-xs text-[#BCD9C7]">
-                Salón Auxiliar cubierto garantizado
+                Salón Auxiliar cubierto
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export const Footer: React.FC = () => {
                   {SITE.hours.events}
                 </span>
                 <span className="block text-[11px] text-white/60 mt-0.5">
-                  Bodas, fin de año, grados y capacitaciones empresariales.
+                  Bodas, convenciones, grados y celebraciones familiares.
                 </span>
               </div>
             </div>
