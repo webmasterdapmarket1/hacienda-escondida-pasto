@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
               <span>Salón Principal</span>
             </div>
             <div className="font-serif text-xl sm:text-2xl font-bold">Hasta 200 pax</div>
-            <p className="text-xs text-white/70 mt-1 font-light">Grandes banquetes y convenciones</p>
+            <p className="text-xs text-white/70 mt-1 font-light">Tu salón ideal</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-5 text-white transition-transform hover:-translate-y-1">
