@@ -12,7 +12,7 @@ export const EventoResuelto: React.FC = () => {
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-[#BCD9C7]" />,
-      title: "Plan B Antilluvia Garantizado",
+      title: "Plan Antilluvia",
       desc: "El clima de montaña no arruinará tu celebración. Si llueve durante tu momento campestre exterior, el Salón Auxiliar (45 pax) o el Salón Principal (200 pax) reciben a tu grupo bajo techo de inmediato.",
       highlight: "Salón auxiliar cubierto",
     },
@@ -25,8 +25,8 @@ export const EventoResuelto: React.FC = () => {
     {
       icon: <Car className="w-6 h-6 text-[#BCD9C7]" />,
       title: "Parqueadero privado para todo tu equipo",
-      desc: "Espacio amplio y vigilado dentro del mismo predio. Capacidad para vehículos particulares, vans y buses empresariales sin congestiones ni riesgos en la vía.",
-      highlight: "Vigilancia privada",
+      desc: "Espacio amplio dentro del mismo predio. Capacidad para vehículos particulares, vans y buses empresariales sin congestiones ni riesgos en la vía.",
+      highlight: "Parqueadero privado",
     },
   ]
 
